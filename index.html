@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Electronic Life</title>
+
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js application code -->
+    <script type="text/javascript" src="js/vector.js"></script>
+    <script type="text/javascript" src="js/grid.js"></script>
+    <script type="text/javascript" src="js/creature.js"></script>
+    <script type="text/javascript" src="js/world.js"></script>
+
+
+</head>
+<body>
+    <div id="area">
+        <div id="header">
+            <h1>electronic <span id="life"><span id="green">L</span><span id="orange">I</span><span id="blue">F</span><span id="pink">E</span></span></h1>
+
+        </div>
+        <div id="info">
+            <div id="attribution">
+                <p>From exercises in Marijn Haverbeke's <a href="http://eloquentjavascript.net/07_elife.html" target="_blank">Eloquent Javascript</a>.</p>
+
+                <p>Version by <a href="http://www.maxwellmarlowe.com" target="_blank">Nick Leoutsakos</a>.</p>
+            </div>
+
+            <div id="legend">
+                <p><span id="green">#: Walls <span class="right" id="alive">Number Alive</span></span></p>
+                <p><span id="orange">∑: Carnivores : <span class="right" id="num_carnivores"></span></span></p>
+                <p><span id="blue">O: Herbivores : <span class="right" id="num_herbivores"></span></span></p>
+                <p><span id="purple">§: Omnivores : <span class="right" id="num_omnivores"></span></span></p>
+                <p><span id="pink">@: Plants : <span class="right" id="num_plants"></span></span></p>
+                <p><span id="dark">†: Graves</span></p>
+            </div>
+
+            <div id="options">
+                <button onclick="newGame();">Restart Simulation</button>
+                <button onclick="pauseGame();">Pause Simulation</button>
+                <h4>Turns Passed: <span id="score"></span></h4>
+            </div>
+
+        </div>
+        <div id="game"></div>
+        <div id="winner"></div>
+    </div>
+
+
+    <!-- test js -->
+    <script type="text/javascript" src="js/test.js"></script>
+
+</body>
+</html>
